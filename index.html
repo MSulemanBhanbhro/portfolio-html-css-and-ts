@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+</head>
+<body>
+  <header class="navbar">
+    <nav class="nav-container">
+      <!-- Logo Section -->
+      <div class="logo">
+        <h1 class="logo-text">M Suleman</h1>
+      </div>
+
+      <!-- Desktop Menu -->
+      <ul class="desktop-menu">
+        <li class="menu-item"><a href="#home">Home</a></li>
+        <li class="menu-item"><a href="#about">About</a></li>
+        <li class="menu-item"><a href="#skill">Skills</a></li>
+        <li class="menu-item"><a href="#project">Projects</a></li>
+        <li class="menu-item"><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu Icon -->
+      <div class="menu-icon" onclick="toggleMenu()">
+        <span id="menuIcon">&#9776;</span> <!-- Hamburger Icon -->
+        <span id="closeIcon" class="hidden">&times;</span> <!-- Close Icon -->
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <ul id="mobileMenu" class="mobile-menu hidden">
+      <li class="mobile-menu-item"><a href="#home" onclick="toggleMenu()">Home</a></li>
+      <li class="mobile-menu-item"><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li class="mobile-menu-item"><a href="#skill" onclick="toggleMenu()">Skills</a></li>
+      <li class="mobile-menu-item"><a href="#project" onclick="toggleMenu()">Projects</a></li>
+      <li class="mobile-menu-item"><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+  </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-container">
+          <!-- Text Section -->
+          <div class="hero-text">
+            <div class="hero-intro">
+              <span class="wave-icon">👋</span>
+              <h1>Hello, I’m</h1>
+            </div>
+            <h1 class="hero-name">Muhammad Suleman</h1>
+            <h2 class="hero-title">FrontEnd Developer</h2>
+            <p class="hero-description">
+              Frontend Developer skilled in HTML, CSS, and JavaScript, creating clean, responsive, and visually appealing interfaces with React and Next.js for a seamless user experience.
+            </p>
+            <div class="hero-button">
+              <a href="https://github.com/MSulemanBhanbhro" target="_blank" class="github-link">
+                Github Account <i class="fa-brands fa-github github-icon"></i>
+              </a>
+            </div>
+          </div>
+    
+          <!-- Image Section -->
+          <div class="hero-image">
+            <img src="images/ms.png" alt="suleman" class="profile-image">
+          </div>
+        </div>
+      </section>
+
+        <!-- About Section -->
+  <section class="about-section" id="about">
+    <h1 class="about-title">
+      About <span class="highlight">Me</span>
+    </h1>
+
+    <div class="about-content">
+      <!-- Image Section -->
+      <div class="about-image">
+        <img src="images/ms1.png" alt="Suleman" class="profile-image">
+      </div>
+
+      <!-- Text Section -->
+      <div class="about-text">
+        <div class="quote-icon">
+          <span class="quote-left">“</span>
+        </div>
+        <p class="about-description">
+          As a skilled and dedicated Frontend Developer, I bring a strong blend of creativity, technical expertise, and a deep understanding of modern web design principles. With hands-on experience in building responsive and user-centric applications, I am proficient in HTML, CSS, and JavaScript, along with a deep focus on frameworks like React and Next.js.
+        </p>
+        <div class="quote-icon">
+          <span class="quote-right">”</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education Section -->
+    <div class="education-section">
+      <h2 class="education-title">Education :</h2>
+      <div class="education-underline"></div>
+
+      <ul class="education-list">
+        <li class="education-item">
+          <p class="education-date">Mar 2017 - June 2019</p>
+          <h3 class="education-degree">Intermediate, Pre - Engineering</h3>
+          <p class="education-institution">Government Boys Degree College Umerkot</p>
+        </li>
+        
+        <li class="education-item">
+          <p class="education-date">Sep 2019 - Dec 2023</p>
+          <h3 class="education-degree">BSc Economics</h3>
+          <p class="education-institution">University Of Sindh Jamshoro</p>
+        </li>
+
+        <li class="education-item">
+          <p class="education-date">Feb 2023 - Aug 2023</p>
+          <h3 class="education-degree">Web Development</h3>
+          <p class="education-institution">Institute Of Imagine Tech</p>
+        </li>
+
+        <li class="education-item">
+          <p class="education-date">Feb 2024 - Present</p>
+          <h3 class="education-degree">Web 3, AI, & Metaverse</h3>
+          <p class="education-institution">Governor Sindh Kamran Tessori Initiative for Artificial Intelligence & Computing</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skill Section -->
+  <section id="skill" class="skill-section">
+    <h1 class="skill-title">
+      My <span class="highlight">Skills</span>
+    </h1>
+
+    <div class="skill-cards-container">
+      <!-- Skill Card for Next.js -->
+      <div class="skill-card">
+        <div class="icon"><i><img src="images/nextjs.png" alt=""></i></div>
+        <h1 class="skill-name">Next Js</h1>
+        <div class="progress-bar">
+          <div class="progress-bar-fill"></div>
+        </div>
+      </div>
+
+      <!-- Skill Card for React.js -->
+      <div class="skill-card">
+        <div class="icon"><i><img src="images/react.png" alt=""></i></div>
+        <h1 class="skill-name">React Js</h1>
+        <div class="progress-bar">
+          <div class="progress-bar-fill"></div>
+        </div>
+      </div>
+
+      <!-- Skill Card for Tailwind CSS -->
+      <div class="skill-card">
+        <div class="icon"><i><img src="images/download.jpg" alt=""></i></div>
+        <h1 class="skill-name">Tailwind CSS</h1>
+        <div class="progress-bar">
+          <div class="progress-bar-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-cards-container">
+      <!-- Skill Card for TypeScript -->
+      <div class="skill-card">
+        <div class="icon"><i><img src="images/ts.png" alt=""></i></div>
+        <h1 class="skill-name">TypeScript</h1>
+        <div class="progress-bar">
+          <div class="progress-bar-fill"></div>
+        </div>
+      </div>
+
+      <!-- Skill Card for JavaScript -->
+      <div class="skill-card">
+        <div class="icon"><i><img src="images/js.png" alt=""></i></div>
+        <h1 class="skill-name">JavaScript</h1>
+        <div class="progress-bar">
+          <div class="progress-bar-fill"></div>
+        </div>
+      </div>
+
+      <!-- Skill Card for Figma -->
+      <div class="skill-card">
+        <div class="icon"><i><img src="images/fig.png" alt=""></i></div>
+        <h1 class="skill-name">Figma</h1>
+        <div class="progress-bar">
+          <div class="progress-bar-fill"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Section -->
+  <section id="project" class="project-section">
+    <h1 class="project-title">
+      My <span class="highlight">Projects</span>
+    </h1>
+
+    <div class="project-cards-container">
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <img src="images/resume.png" alt="static resume" class="project-image">
+        <h1 class="project-name">Static Resume Builder</h1>
+        <div class="project-links">
+          <a href="https://resumeproject01bymsuleman.vercel.app/" target="_blank" class="button site-button">
+            <span>Visit Site</span> <i class="fa-solid fa-globe"></i>
+          </a>
+          <a href="https://github.com/MSulemanBhanbhro/resumeproject" target="_blank" class="button github-button">
+            <span>GitHub</span><i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <img src="images/clone.png" alt="dynamic resume" class="project-image">
+        <h1 class="project-name">Giaic Clone</h1>
+        <div class="project-links">
+          <a href="https://giaic-clone-suleman.vercel.app/" target="_blank" class="button site-button">
+            <span>Visit Site</span> <i class="fa-solid fa-globe"></i>
+          </a>
+          <a href="https://github.com/MSulemanBhanbhro/Giaic" target="_blank" class="button github-button">
+            <span>GitHub</span> <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <img src="images/acme.png" alt="NextJs Dashboard" class="project-image">
+        <h1 class="project-name">NextJs Dashboard</h1>
+        <div class="project-links">
+          <a href="https://nextjs-dashboard-by-msuleman.vercel.app/" target="_blank" class="button site-button">
+            <span>Visit Site</span> <i class="fa-solid fa-globe"></i>
+          </a>
+          <a href="https://github.com/MSulemanBhanbhro/nextjs-dashboard" target="_blank" class="button github-button">
+            <span>GitHub</span> <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h1 class="contact-title">
+      Contact <span class="highlight">Me</span>
+    </h1>
+
+    <div class="contact-container">
+      <!-- Email -->
+      <div class="contact-item">
+        <div class="icon-wrapper">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <i class="fa-solid fa-chevron-right"></i>
+        <h2 class="contact-info">ms5901562@gmail.com</h2>
+      </div>
+
+      <!-- Phone -->
+      <div class="contact-item">
+        <div class="icon-wrapper">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <i class="fa-solid fa-chevron-right"></i>
+        <h2 class="contact-info">0342 - 0032995</h2>
+      </div>
+
+      <!-- Location -->
+      <div class="contact-item">
+        <div class="icon-wrapper">
+          <i class="fa-solid fa-location-crosshairs"></i>
+        </div>
+        <i class="fa-solid fa-chevron-right"></i>
+        <h2 class="contact-info">Naveed Arcade Saddar Karachi</h2>
+      </div>
+
+      <hr class="divider">
+
+      <!-- Social Links -->
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=61553873587821&mibextid=ZbWKwL" target="_blank" class="social-icon facebook-icon"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/muhammadsuleman5526/profilecard/?igsh=a3ljYjIwdjRncml2" target="_blank" class="social-icon instagram-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/muhammad-suleman-2b58b9260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon linkedin-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <h1 class="footer-text">M Suleman &copy; <span id="currentYear"></span></h1>
+  </footer>
+
+  <script src="ts/scripts.js"></script>
+</body>
+</html>

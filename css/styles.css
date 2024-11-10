@@ -1,0 +1,584 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    background-color: #20242D;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .logo-text {
+    color: #E9E6E5;
+    font-family: 'Lusitana', sans-serif;
+  }
+  
+  /* Desktop Menu */
+  .desktop-menu {
+    display: flex;
+    gap: 1.7rem;
+    list-style: none;
+  }
+  
+  .menu-item a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #E9E6E5;
+    font-family: 'Lusitana', sans-serif;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-item a:hover {
+    color: #02E5F2;
+  }
+  
+  /* Mobile Menu Icon */
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #E9E6E5;
+  }
+  
+  /* Mobile Menu */
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #323846;
+    list-style: none;
+    padding: 1rem 0;
+  }
+  
+  .mobile-menu-item a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    margin: 1.0rem 0;
+    font-weight: bold;
+    padding: 10px 0px;
+  }
+  .mobile-menu-item li{
+    padding: 10px 0px;
+  }
+  
+  /* Hidden Class */
+  .hidden {
+    display: none;
+  }
+  
+  /* Media Query for Mobile */
+  @media (max-width: 768px) {
+    .desktop-menu {
+      display: none;
+    }
+    .menu-icon {
+      display: block;
+    }
+  }
+
+  /* Hero Section Styling */
+.hero-section {
+    padding: 5rem 1.5rem;
+    background-color: #20242D;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+    gap: 8.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-container {
+      flex-direction: row;
+    }
+  }
+  
+  /* Text Section */
+  .hero-text {
+    text-align: justify;
+    color: #E9E6E5;
+    flex: ;
+  }
+  
+  .hero-intro {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .hero-name {
+    margin-top: 0.5rem;
+    color: #02E5F2;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .hero-title {
+    margin-top: 0.5rem;
+    color: #02E5F2;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .hero-description {
+    margin-top: 1rem;
+    color: #9EA2A5;
+    font-size: 1rem;
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-description {
+      display: block;
+    }
+  }
+  
+  /* Button */
+  .hero-button {
+    background-color: #02E5F2;
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 240px;
+    margin-top: 1.5rem;
+    text-align: center;
+    border-radius: 0.25rem;
+  }
+  
+  .github-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .github-icon {
+    margin-left: 0.75rem;
+    font-size: 1.5rem;
+  }
+  
+  /* Image Section */
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .profile-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* About Section Styling */
+.about-section {
+    background-color: #323846;
+    padding: 2rem 1rem;
+    color: #E9E6E5;
+    text-align: center;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .highlight {
+    color: #02E5F2;
+  }
+  
+  /* Content Layout */
+  .about-content {
+    display: flex;
+ 
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 0 10rem;
+  }
+  
+  @media (min-width: 768px) {
+    .about-content {
+      flex-direction: row;
+      gap: 2rem;
+    }
+  }
+  
+  /* Image Section */
+  .about-image .profile-image {
+    width: 400px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  
+  /* Text Section */
+  .about-text {
+    max-width: 600px;
+  }
+  
+  .quote-icon .quote-left {
+    color: #02E5F2;
+    font-size: 2rem;
+  }
+  
+  .quote-icon .quote-right {
+    color: #02E5F2;
+    font-size: 2rem;
+  }
+  
+  .about-description {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 1rem 0;
+    color: #E9E6E5;
+  }
+  
+  /* Education Section */
+  .education-section {
+    padding: 2rem 4rem;
+    text-align: left;
+  }
+  
+  .education-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #02E5F2;
+  }
+  
+  .education-underline {
+    width: 80px;
+    height: 4px;
+    background-color: #20242D;
+    margin-bottom: 1.5rem;
+  }
+  
+  .education-list {
+    list-style-type: disc;
+    margin-left: 2rem;
+  }
+  
+  .education-item {
+    margin-bottom: 1rem;
+    color: #E9E6E5;
+  }
+  
+  .education-date {
+    font-size: 1rem;
+  }
+  
+  .education-degree {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+  
+  .education-institution {
+    font-size: 1rem;
+    color: #9EA2A5;
+  }
+
+  /* Skill Section Styling */
+.skill-section {
+    background-color: #20242d;
+    min-height: 100vh;
+    padding: 2.5rem 1rem;
+    text-align: center;
+    color: #e9e6e5;
+  }
+  
+  .skill-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .highlight {
+    color: #02e5f2;
+  }
+  
+  /* Skill Cards Container */
+  .skill-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+  .skill-card {
+    width: 100%;
+    max-width: 350px;
+    height: 180px;
+    background-color: #323846;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .icon i{
+    font-size: 3rem;
+    color: #02e5f2;
+  }
+  .icon i img{
+    width: 70px;
+    height: 60px;
+  }
+  
+  .skill-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #777a80;
+    margin-top: 0.5rem;
+  }
+  
+  /* Progress Bar Styling */
+  .progress-bar {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #b0e0e6;
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+  }
+  
+  .progress-bar-fill {
+    width: 75%;
+    height: 100%;
+    background-color: #20242d;
+    border-radius: 0.25rem;
+  }
+  
+  /* Icons Styling */
+  .nextjs-icon::before { content: "\f3b4"; } /* Placeholder for Next.js icon */
+  .reactjs-icon::before { content: "\f41b"; } /* Placeholder for React.js icon */
+  .tailwind-icon::before { content: "\f5c9"; } /* Placeholder for Tailwind CSS icon */
+  .typescript-icon::before { content: "\f5c4"; } /* Placeholder for TypeScript icon */
+  .javascript-icon::before { content: "\f3b7"; } /* Placeholder for JavaScript icon */
+  .figma-icon::before { content: "\f9da"; } /* Placeholder for Figma icon */
+
+  /* Project Section Styling */
+.project-section {
+    background-color: #323846;
+    min-height: 100vh;
+    padding: 2.5rem 1rem;
+    text-align: center;
+    color: #e9e6e5;
+  }
+  
+  .project-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .highlight {
+    color: #02e5f2;
+  }
+  
+  /* Project Cards Container */
+  .project-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+  .project-card {
+    background-color: #20242d;
+    border-radius: 0.5rem;
+    max-width: 430px;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .project-image {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  
+  .project-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #777a80;
+    margin-top: 1rem;
+  }
+  
+  .project-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  .project-links a {
+    color: black;
+  }
+  .project-links a i{
+    margin-left: 20px;
+  }
+  
+  /* Button Styling */
+  .button {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .site-button {
+    background-color: #87cefa;
+  }
+  
+  .github-button {
+    background-color: #d3d3d3;
+  }
+  
+  .icon {
+    margin-left: 0.5rem;
+    font-size: 1.25rem;
+  }
+
+
+/* Contact Section Styling */
+.contact-section {
+    background-color: #20242d;
+    min-height: 50vh;
+    padding: 2.5rem 1rem;
+    text-align: center;
+    color: #e9e6e5;
+  }
+  
+  .contact-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .highlight {
+    color: #02e5f2;
+  }
+  
+  .contact-container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .icon-wrapper {
+    padding: 0.75rem;
+    border: 2px solid gray;
+    border-radius: 50%;
+    color: gray;
+    font-size: 1.5rem;
+  }
+  
+  /* Arrow icon */
+  .arrow-icon {
+    font-size: 1.875rem;
+    color: gray;
+  }
+  
+  .contact-info {
+    font-size: 1.25rem;
+  }
+  
+  /* Divider */
+  .divider {
+    margin: 2rem 0;
+    border: 1px solid gray;
+  }
+  
+  /* Social Links Styling */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .social-icon {
+    padding: 0.75rem;
+    border: 2px solid gray;
+    border-radius: 50%;
+    font-size: 1.875rem;
+    color: gray;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .social-icon:hover {
+    background-color: #323846;
+    color: white;
+  }
+  
+  /* Icons for social media */
+  .facebook-icon:before {
+    content: url('facebook.svg');
+  }
+  
+  .instagram-icon:before {
+    content: url('instagram.svg');
+  }
+  
+  .linkedin-icon:before {
+    content: url('linkedin.svg');
+  }
+  /* Footer Section Styling */
+.footer {
+    background-color: #323846;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .footer-text {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-text {
+      font-size: 1.5rem;
+    }
+  }
+  
+  
